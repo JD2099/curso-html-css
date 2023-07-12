@@ -27,16 +27,16 @@
             <div class="navbar-brand" ></div>
             <ul class="navbar-nav d-flex justify-content-center align-items-center">
               <li class="nav-item">
-                <a class="nav-link " aria-current="page" href="#">Acerca de mí</a>
+                <a class="nav-link " aria-current="page" href="#acercaMi">Acerca de mí</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Proyecto</a>
+                <a class="nav-link" href="#proy">Proyecto</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Testimonios</a>
+                <a class="nav-link" href="#testimonios">Testimonios</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contacto</a>
+                <a class="nav-link" href="#contacto">Contacto</a>
               </li>
             </ul>
           </div>
@@ -55,14 +55,14 @@
         </div>
     </section>
     <!--Acerca de mi-->
-    <section class="acercaMi seccionOscura">
-        <div class="contenedor">
+    <section  id="acercaMi" class="acercaMi seccionOscura">
+        <div class="contenedor" id="contenedorAcerca">
             <h2>Conoce a Juan Diego</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos voluptates magni neque deserunt debitis cupiditate, ipsum rerum explicabo. Accusamus mollitia blanditiis reprehenderit quod similique quos reiciendis aliquid excepturi recusandae necessitatibus.</p>
         </div>
     </section>
     <!--Experiencia-->
-    <section class="experiencia seccionClara">
+    <section  class="experiencia seccionClara">
         <div class="container text-center">
             <div class="row">
                 <div class="col-12 col-md-4">
@@ -102,7 +102,7 @@
         </div>
     </section>
     <!--Proyectos-->
-    <section class="proyecto seccionClara d-flex flex-column">
+    <section id="proy" class="proyecto seccionClara d-flex flex-column">
         <h2 class="proyectoTitulo">Mis proyectos recientes</h2>
         <h3 class="proyectoDescripcion">Estos son algunos proyectos que he realizado.</h3>
         <!--Galeria-->
@@ -248,6 +248,95 @@
                 </button>
         </a>    
     </section>
+    <!--Testimonios-->
+    <section id="testimonios" class="seccionClara testimonios">
+        <h2 class="proyectoTitulo">Testimonios</h2>
+        <h3 class="proyectoDescripcion">Estos son algunos testimonios de mis clientes:</h3>
+        <!--Carrusel-->
+        <div id="testimonios-carrusel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="container" >
+                    <img src="imagenes/proyecto6.png" class="testimonioImagen rounded-circle" alt="Imagen 1">
+                    <p class="testimonioTexto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus vero culpa voluptate libero, neque</p>
+                    <div class="testimonioInfo">
+                        <p class="cliente">Gino</p>
+                        <p class="cargo">Gerente</p>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="container" >
+                    <img src="imagenes/proyecto4.png" class="testimonioImagen rounded-circle" alt="Imagen 1">
+                    <p class="testimonioTexto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus vero culpa voluptate libero, neque</p>
+                    <div class="testimonioInfo">
+                        <p class="cliente">Nora</p>
+                        <p class="cargo">Gerente de Web</p>
+                    </div>
+                </div>          
+              </div>
+              <div class="carousel-item">
+                <div class="container" >
+                    <img src="imagenes/proyecto2.png" class="testimonioImagen rounded-circle" alt="Imagen 1">
+                    <p class="testimonioTexto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus vero culpa voluptate libero, neque</p>
+                    <div class="testimonioInfo">
+                        <p class="cliente">Julio</p>
+                        <p class="cargo">Manager</p>
+                    </div>
+                </div>              
+               </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+          </div>
+    </section>
+    <!--Contacto-->
+    <section id="contacto" class="contacto seccionOscura">
+        <div class="container">
+            <div class="container-fluid rectangulo text-center justify-content-evenly ">
+                <div class="row">
+                    <div class="col-12 col-md-4 proyectoTitulo">
+                        Hablemos
+                    </div>
+                    <div class="col-12 col-md-4 proyectoDescripcion" style="color: white; font-size: 0.9rem;">
+                        Contactame Lorem ipsum dolor sit amet consectetur adgnñn kjnfkn kjdfñkn kjndkf kjñkj kjñnfñkj
+                    </div>
+                    <div class="col-12 col-md-4 ">
+                        <a href="mailto:juandiego@correo.com">
+                            <button type="button" class="btn" >
+                                Contacto
+                                <i class="bi bi-envelope-check-fill"></i>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!--Footer-->
+    <footer class="seccionOscura d-flex flex-column align-items-center justify-content-center">
+        <img class="footer-logo" src="imagenes/icon.svg" alt="Logo">
+        <p class="footerTexto text-center">Aprendo y creo cada dia. <br>Creemos algo juntos </p>
+        <div class="iconosRedes d-flex flex-wrap align-items-center justify-content-center">
+            <a href="#">
+                <i class="bi bi-twitter"></i>
+            </a>
+            <a href="#">
+                <i class="bi bi-facebook"></i>
+            </a>
+            <a href="#">
+                <i class="bi bi-instagram"></i>
+            </a>
+        </div>
+        <div class="derechos">Creado por MI &#169; </div>
+    </footer>
     <!--Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
